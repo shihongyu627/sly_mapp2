@@ -1,0 +1,149 @@
+.head-wrap {
+	width: 100vw;
+	height: 360rpx;
+	background-size: 100%;
+	padding: 60rpx 30rpx; 
+	box-sizing: border-box;
+	
+	.title {
+		color: var(--btn-text-color);
+		text-align: center;
+		line-height: 1;
+	}
+	
+	.point {
+		font-size: 48rpx;
+		color: var(--btn-text-color);
+		text-align: center;
+		line-height: 1;
+		margin-top: 20rpx;
+	}
+	
+	.flex-box {
+		display: flex;
+		margin-top: 30rpx;
+		
+		.flex-item {
+			flex: 1;
+			
+			.num {
+				font-size: 30rpx;
+				margin-bottom: 20rpx;
+			}
+			
+			view {
+				text-align: center;
+				color: var(--btn-text-color);
+				line-height: 1;
+			}
+		}
+	}
+}
+
+.menu-wrap {
+	border-radius: $border-radius;
+	margin: 0 30rpx;
+	padding: 30rpx;
+	background: #fff;
+	display: flex;
+	transform: translateY(-54rpx);
+	
+	.menu-item {
+		flex: 1;
+		text-align: center;
+		
+		.iconfont {
+			font-size: 28rpx;
+			margin-right: 6rpx;
+		}
+	}
+}
+
+.task-wrap {
+	
+	.title {
+		font-size: 32rpx;
+		text-align: center;
+		margin-bottom: 40rpx;
+		
+		
+		.text {
+			margin: 0 20rpx;
+		}
+		
+		.iconfont {
+			font-size: 20rpx;
+			position: absolute;
+			z-index: 1;
+		}
+		
+		.color-base-text-light {
+			z-index: 0;
+		}
+		
+		.box {
+			position: relative;
+		}
+		
+		.left  {
+			right: 20rpx;
+			top: 6rpx;
+				
+			.color-base-text-light {
+				transform: translateX(-50%);
+			}
+		}
+		
+		.right {
+			left: 0;
+			top: 6rpx;
+			
+			.color-base-text-light {
+				transform: translateX(50%);
+			}
+		}
+	}
+	
+	.task-item {
+		border-radius: $border-radius;
+		background: #fff;
+		padding: 30rpx;
+		margin: 20rpx 30rpx 0 30rpx;
+		display: flex;
+		align-items: center;
+		
+		.icon {
+			width: 80rpx;
+			height: 80rpx;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: #fff;
+			border-radius: 50%;
+		}
+		
+		.iconfont {
+			font-size: 40rpx;
+		}
+		
+		.wrap {
+			flex: 1;
+			padding-left: 30rpx;
+			
+			view {
+				line-height: 1;
+				margin-top: 10rpx;
+				
+			}
+		}
+		
+		.btn {
+			height: 60rpx;
+			line-height: 60rpx;
+			border-radius: 10rpx;
+			text-align: center;
+			width: 130rpx;
+			border: 2rpx solid;
+		}
+	}
+}

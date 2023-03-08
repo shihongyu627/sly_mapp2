@@ -1,0 +1,238 @@
+// 营销活动
+.goods-promotion {
+	background: var(--promotion-color);
+	height: 75px;
+	.price-info {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: flex-start;
+		 .icon-box {
+		 	margin-right: 20rpx;
+		 	.iconfont{
+		 		font-size: 60rpx;
+		 		color: #ffffff;
+		 	}
+		 }
+		 .price-box{
+		 	display: flex;
+		 	align-items: flex-start;
+		 	flex-direction: column;
+		 	height: 100%;
+		 	justify-content: center;
+		 	.promotion-text{
+		 		font-size: 36rpx;
+		 		color: #fff;
+		 		line-height: 1;
+		 	}
+		 	.sale-num{
+		 		display: flex;
+		 		align-items: center;
+		 		margin-top: 18rpx;
+		 		view{
+		 			color: #ffffff;
+		 			line-height: 1;
+		 		}
+		 		.pintuan-num {
+		 			color: var(--pintuan-label-color);
+		 			line-height: 1;
+		 			border-radius: 4rpx;
+		 			margin-right: 10rpx;
+		 			font-size: 24rpx;
+		 			padding: 8rpx 14rpx 9.5rpx;
+		 			background-color: var(--pintuan-label-bg);
+		 			font-weight: bold;
+		 		}
+		 	}
+		 }
+	}
+}
+
+.group-wrap {
+	.goods-module-wrap {
+		&.promotion-price-wrap {
+			display: inline-block;
+			font-size: $font-size-tag;
+			border-radius: 30rpx;
+			padding: 8rpx 18rpx;
+			margin-right: 10rpx;
+			vertical-align: middle;
+			// border: 1px solid;
+			margin-top: 10rpx;
+			line-height: 1;
+			color: #fff;
+			background-color: var(--promotion-tag);
+			.label {
+				font-size: $font-size-activity-tag;
+				margin-right: 10rpx;
+				vertical-align: middle;
+			}
+
+			.price-symbol {
+				font-size: $font-size-tag;
+				top: 0;
+				vertical-align: middle;
+			}
+
+			.price {
+				font-size: $font-size-base;
+			}
+		}
+	}
+}
+.step {
+	margin-bottom: 10px;
+	padding: 15px;
+	background: #ffffff;
+	.pin-step {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		margin-top: 30rpx;
+		view {
+			// width:120rpx;
+			text-align: center;
+			image {
+				width: 48rpx;
+				height: 48rpx;
+			}
+			view {
+				font-size: $font-size-tag;
+			}
+		}
+		image {
+			width: 40rpx;
+			height: 10rpx;
+		}
+	}
+}
+
+.spelling-block {
+	font-size: $font-size-base;
+	width: 100%;
+	height: 130rpx;
+	background: #fff;
+
+	.item {
+		padding: 20rpx 0;
+		display: flex;
+		align-items: center;
+		.user-logo {
+			display: inline-block;
+			margin: 0 20rpx 0 0;
+			vertical-align: top;
+			image {
+				width: 80rpx;
+				vertical-align: middle;
+				border-radius: 50%;
+				height: 80rpx;
+			}
+		}
+		.user-name {
+			width: 170rpx;
+			display: inline-block;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			vertical-align: top;
+			font-size: $font-size-base;
+		}
+		.info {
+			font-size: $font-size-tag;
+			margin-right: 20rpx;
+			display: inline-block;
+			text-align: right;
+			flex: 1;
+			.tip {
+				text-align: right;
+			}
+		}
+	}
+}
+
+// 参与拼团
+.pintuan-popup-layer {
+	.layer {
+		padding: 30rpx;
+		width: 422rpx;
+	}
+	.title {
+		text-align: center;
+		padding: 20rpx;
+		font-size: $font-size-toolbar;
+		font-weight: bold;
+	}
+	.info {
+		font-size: $font-size-tag;
+		text-align: center;
+	}
+	.mask-layer-spelling-close {
+		position: absolute;
+		right: -20rpx;
+		top: -20rpx;
+		width: 60rpx;
+		height: 60rpx;
+	}
+	.user-list {
+		padding: 40rpx 0;
+		text-align: center;
+		.item {
+			position: relative;
+			margin-right: 20rpx;
+			display: inline-block;
+			.boss {
+				position: absolute;
+				left: -24rpx;
+				top: 0rpx;
+				color: #fff;
+				border-radius: 20rpx;
+				font-size: $font-size-tag;
+				padding: 4rpx 10rpx;
+				z-index: 1;
+				line-height: 1;
+			}
+			image {
+				width: 80rpx;
+				height: 80rpx;
+				vertical-align: middle;
+				border-radius: 50%;
+			}
+		}
+		.imgX {
+			width: 100%;
+			white-space: nowrap;
+			box-sizing: border-box;
+		}
+	}
+	button {
+		color: #fff;
+		border: 0;
+		margin: 16rpx auto;
+		display: block;
+		width: 90%;
+	}
+}
+
+.countdown {
+		width: 220rpx;
+		background: var(--promotion-aux-color);
+		.txt{
+			color: #ffffff!important;
+			font-size: 28rpx!important;
+		}
+		.clockrun{
+			margin-top: 16rpx!important;
+		}
+		&:after{
+			position: absolute;
+			content: '';
+			top: calc(50% - 15rpx);
+			z-index: 5;
+			left: -15rpx;
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 15rpx 15rpx 15rpx 0;
+			border-color: transparent var(--promotion-aux-color) transparent transparent;
+		}
+	}

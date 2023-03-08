@@ -1,0 +1,141 @@
+.verify-container {
+	width: 100vw;
+	height: 100vh;
+}
+
+.align-right {
+	text-align: right;
+}
+
+.type-wrap {
+	display: flex;
+	background-color: #fff;
+	height: 90rpx;
+	
+	& > view {
+		flex: 1;
+		text-align: center;
+		
+		text {
+			line-height: 86rpx;
+			border-bottom: 4rpx solid #fff;
+			display: inline-block;
+			font-size: 30rpx;
+		}
+	}
+}
+
+.swiper-box {
+	width: 100%;
+	height: calc(100vh - 100rpx);
+
+	.swiper-item {
+		width: 100%;
+		height: 100%;
+
+		.verify-list {
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
+
+.verify-list {
+	.item {
+		margin: 24rpx;
+		border-radius: $border-radius;
+		background: #fff;
+		position: relative;
+		padding: 30rpx;
+
+		.header {
+			display: flex;
+			padding-bottom: 30rpx;
+
+			view {
+				line-height: 1;
+				flex: 1;
+				max-width: 50%;
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+		}
+
+		.xian {
+			width: 100%;
+			border: 0.5px solid #eee;
+		}
+
+		.body {
+			
+			.content-item {
+				display: flex;
+				padding-top: 24rpx;
+
+				.img-wrap {
+					width: 120rpx;
+					height: 120rpx;
+					border-radius: $border-radius;
+					overflow: hidden;
+
+					image {
+						width: 100%;
+						height: 100%;
+					}
+				}
+
+				.info-wrap {
+					flex: 1;
+					display: flex;
+					flex-direction: column;
+					justify-content: space-between;
+					width: 100%;
+					padding-right: 23rpx;
+					.name-wrap {
+						flex: 1;
+						padding-left: 23rpx;
+
+						.goods-name {
+							display: -webkit-box;
+							-webkit-box-orient: vertical;
+							-webkit-line-clamp: 1;
+							overflow: hidden;
+							line-height: 1.5;
+							color: #000000;
+							font-size: $font-size-base;
+						}
+					}
+
+					.money-wrap {
+						margin-top: 20rpx;
+						padding: 0 23rpx;
+						display: flex;
+						justify-content: space-between;
+						width: 100%;
+						align-items: center;
+						
+						& > view {
+							line-height: 1;
+						}
+						
+						.unit {
+							font-weight: normal;
+							font-size: $font-size-tag;
+							margin-right: 2rpx;
+						}
+
+						.iconfont {
+							line-height: 1;
+							// font-size: $font-size-tag;
+						}
+					}
+				}
+				
+				.money-wrap {
+					font-weight: bold;
+				}
+			}
+		}
+	}
+}

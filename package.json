@@ -1,0 +1,22 @@
+{
+  "name": "sly_mapp2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "dayjs": "^1.11.5",
+    "jweixin-module": "^1.4.1",
+    "pyfl": "^1.1.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://e.coding.net/kafudev/sly/sly_mapp2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

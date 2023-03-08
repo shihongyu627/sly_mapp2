@@ -1,0 +1,365 @@
+.invite_adv {
+	position: relative;
+	image {
+		height: 100%;
+		width: 100%;
+	}
+	.desc {
+		position: absolute;
+		top: 0;
+		right: 10rpx;
+		text-align: right;
+		color: #fff;
+		padding: 20rpx;
+		font-size: $font-size-tag;
+		.title_desc {
+			font-size: $font-size-tag;
+		}
+		.iconfont {
+			display: inline-block;
+			color: #fff;
+			font-size: $font-size-tag;
+			margin-right: 10rpx;
+		}
+	}
+	.time {
+		position: absolute;
+		bottom: 120rpx;
+		text-align: center;
+		width: 100%;
+		color: #fff;
+	}
+	.font {
+		position: absolute;
+		bottom: 220rpx;
+		text-align: center;
+		width: 333rpx;
+		height: 186rpx;
+		z-index: 5;
+		left: calc((100% - 333rpx) / 2);
+	}
+	.btn {
+		position: absolute;
+		background-size: cover;
+		background-repeat: no-repeat;
+		text-align: center;
+		width: 610rpx;
+		line-height: 112rpx;
+		height: 126rpx;
+		left: calc((100% - 610rpx) / 2);
+		color: #ff0029;
+		bottom: -24rpx;
+		font-size: 36rpx;
+		font-weight: bold;
+	}
+}
+.more_invite {
+	text-align: center;
+	padding: 30rpx;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.content {
+	padding: 30rpx 30rpx 0 30rpx; 
+	
+	.title {
+		font-size: $font-size-toolbar;
+		color: #000;
+		font-weight: 500;
+	}
+	.empty {
+		padding: 50rpx;
+		.tip {
+			font-size: $font-size-base;
+			color: #999999;
+			text-align: center;
+		}
+	}
+	.invitelist_block {
+		border: 2rpx solid $color-line;
+		border-radius: $border-radius;
+		margin-top: $margin-both;
+		background-color: #fff;
+	}
+	.invitelist {
+		.list-item {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 30rpx 24rpx;
+			
+			.img {
+				width: 70rpx;
+				height: 70rpx;
+				border-radius: 70rpx;
+				border: 2rpx solid;
+				margin-right: $margin-updown;
+				overflow: hidden;
+				image {
+					width: 100%;
+					height: 70rpx;
+					overflow: hidden;
+				}
+			}
+			
+			.list-left {
+				flex: 1;	
+							
+				.info {
+					display: flex;
+					
+					& > view {
+						flex: 1;
+					}
+					
+					.time {
+						text-align: right;
+					}
+				}
+			}
+			.prize {
+			}
+		}
+	}
+	.invite_active {
+		.list {
+			display: flex;
+			margin-top: 37rpx;
+			.item {
+				position: relative;
+				width: 232rpx;
+				height: 214rpx;
+				&.margin_right_none {
+					margin: 0;
+				}
+				image {
+					width: 100%;
+					height: 100%;
+				}
+				.desc {
+					position: absolute;
+					top: 0;
+					text-align: center;
+					width: 100%;
+					.price {
+						text-align: center;
+						background-image: -webkit-linear-gradient(bottom, #ff2440, #ff7b7b);
+						-webkit-background-clip: text;
+						-webkit-text-fill-color: transparent;
+						font-size: 30rpx;
+						font-weight: 500;
+						line-height: 1;
+						text {
+							font-size: 50rpx;
+						}
+					}
+					.type {
+						font-size: $font-size-tag;
+						color: #666666;
+					}
+				}
+			}
+			.item:last-child {
+				margin-right: 0rpx !important;
+			}
+		}
+		.desc {
+			color: #999999;
+			padding: 30rpx 0;
+
+			.title {
+				color: #999999;
+				font-weight: 400;
+			}
+			.desc_list {
+				view {
+					color: #999999;
+					display: flex;
+					text {
+						font-size: $font-size-activity-tag;
+						margin-right: 10rpx;
+						align-self: center;
+					}
+				}
+			}
+		}
+	}
+	.step {
+		display: flex;
+		align-items: center;
+		margin-top: 80rpx;
+		padding-bottom: 80rpx;
+		> view {
+			text-align: center;
+			width: 20%;
+			display: flex;
+			flex-direction: column;
+
+			.img {
+				width: 56rpx;
+				height: 56rpx;
+				margin: auto;
+				image {
+					width: 100%;
+					height: 100%;
+				}
+			}
+			.text {
+				margin-top: 20rpx;
+				font-size: $font-size-tag;
+				color: $color-tip;
+			}
+			.jiantou {
+				width: 40rpx;
+				height: 24rpx;
+				margin: auto;
+			}
+		}
+	}
+}
+.invite-list{
+	margin-top: 40rpx;
+}
+.share-popup,
+.uni-popup__wrapper-box {
+	.share-title {
+		line-height: 60rpx;
+		font-size: $font-size-toolbar;
+		padding: 15rpx 0;
+		text-align: center;
+	}
+
+	.share-content {
+		display: flex;
+		display: -webkit-flex;
+		-webkit-flex-wrap: wrap;
+		-moz-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		-o-flex-wrap: wrap;
+		flex-wrap: wrap;
+		padding: 15rpx;
+
+		.share-box {
+			flex: 1;
+			text-align: center;
+
+			.share-btn {
+				margin: 0;
+				padding: 0;
+				border: none;
+				line-height: 1;
+				height: auto;
+				text {
+					margin-top: 20rpx;
+					font-size: $font-size-tag;
+					display: block;
+					color: $color-title;
+				}
+			}
+
+			.iconfont {
+				font-size: 80rpx;
+				line-height: initial;
+			}
+			.iconpengyouquan,.iconfuzhilianjie,.iconiconfenxianggeihaoyou {
+				color: #07c160;
+			}
+		}
+	}
+
+	.share-footer {
+		height: 90rpx;
+		line-height: 90rpx;
+		border-top: 2rpx #f5f5f5 solid;
+		text-align: center;
+		color: #666;
+	}
+}
+.poster-layer {
+	.generate-poster {
+		padding: 40rpx 0;
+		.iconfont {
+			font-size: 80rpx;
+			color: #07c160;
+			line-height: initial;
+		}
+		> view {
+			text-align: center;
+			&:last-child {
+				margin-top: 20rpx;
+			}
+		}
+	}
+	.image-wrap {
+		width: 70%;
+		margin: 60rpx auto 40rpx auto;
+		box-shadow: 0 0 32rpx rgba(100, 100, 100, 0.3);
+		line-height: 1;
+		border-radius: 16rpx;
+		overflow: hidden;
+		
+		image {
+			width: 100%;
+			height: 100%;
+			height: 750rpx;
+		}
+	}
+	.msg {
+		padding: 40rpx;
+	}
+	.save {
+		text-align: center;
+		height: 80rpx;
+		line-height: 80rpx;
+	}
+	.close {
+		position: absolute;
+		top: 0;
+		right: 20rpx;
+		width: 40rpx;
+		height: 80rpx;
+		font-size: 50rpx;
+	}
+}
+/* 说明弹框 */
+.tips-layer {
+	background: #fff;
+	z-index: 999;
+	height: 40%;
+	width: 100%;
+
+	.head {
+		position: relative;
+	}
+
+	.title {
+		height: 80rpx;
+		line-height: 80rpx;
+		text-align: center;
+		font-size: $font-size-toolbar;
+		font-weight: 700;
+	}
+
+	text {
+		position: absolute;
+		top: 8rpx;
+		right: 44rpx;
+		font-size: $font-size-toolbar;
+		font-weight: 500;
+	}
+
+	.body {
+		width: 100%;
+		height: calc(100% - 80rpx);
+		overflow-y: scroll;
+
+		.detail {
+			padding: 20rpx 30rpx;
+
+			.font-size-base {
+				margin-bottom: 10rpx;
+			}
+		}
+	}
+}

@@ -1,0 +1,138 @@
+.collectPopupWindow {
+	position: relative;
+	height: 113rpx;
+	width: 510rpx;
+	margin-left: calc(100% - 530rpx);
+
+	image {
+		width: 100%;
+		height: 100%;
+	}
+
+	text {
+		color: #ff4544 !important;
+		font-size: 24rpx !important;
+		position: absolute;
+		top: 48rpx;
+		right: 25rpx;
+	}
+}
+.zhezhao {
+	width: 100vw;
+	height: 100vh;
+	background-color: transparent;
+}
+image {
+	max-width: 100% !important;
+	max-height: 100% !important;
+}
+.diy-wrap {
+	/* #ifdef H5 */
+	height: calc(100vh - 88rpx);
+	/* #endif */
+	/* #ifdef MP-WEIXIN */
+	height: 100vh;
+	/* #endif */
+}
+
+.page-img {
+	background-size: contain !important;
+	background-repeat: no-repeat !important;
+}
+
+.page-header {
+	background-size: contain !important;
+	background-repeat: no-repeat !important;
+	background-position: top center;
+	background-attachment: fixed; 
+}
+
+.bg-index {
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	background-size: contain !important;
+	background-repeat: no-repeat !important;
+}
+
+.wap-floating {
+	text {
+		display: block;
+		font-size: 60rpx;
+		color: #ffffff;
+		text-align: center;
+	}
+}
+
+.wap-floating-collect .uni-popup__mask {
+	background: transparent;
+}
+
+::-webkit-scrollbar {
+	width: 0;
+	height: 0;
+	color: transparent;
+}
+
+.popup-box {
+	width: 450rpx;
+	background: #ffffff;
+	border-radius: $border-radius;
+	overflow: hidden;
+
+	.close_title {
+		width: 100%;
+		text-align: center;
+		height: 70rpx;
+		line-height: 70rpx;
+		font-size: $font-size-base;
+	}
+
+	.close_content {
+		width: 100%;
+		max-height: 500rpx;
+		padding: $padding;
+		box-sizing: border-box;
+	}
+
+	.close_content_box {
+		width: 100%;
+		max-height: 460rpx;
+		line-height: 1.3;
+	}
+}
+
+.noStore-text {
+	color: #000000 !important;
+}
+
+.isStore-top {
+	margin-bottom: 10rpx;
+}
+.keep-on-record {
+	text-align: center;
+	padding-bottom: 20rpx;
+	image {
+		width: 150rpx;
+		height: 60rpx;
+	}
+}
+
+.diy-pages-return {
+	position: fixed;
+	width: 100rpx;
+	height: 100rpx;
+	line-height: 100rpx;
+	text-align: center;
+	border-radius: 50%;
+	color: $color-sub;
+	z-index: 9;
+	background-color: #fff;
+	right: 20rpx;
+	bottom: 240rpx;
+	box-shadow: 0 0 10rpx rgba(0, 0, 0, 0.2);
+}
+
+.padding-bottom{
+	padding-bottom: 40rpx !important;
+}

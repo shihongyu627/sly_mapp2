@@ -1,0 +1,391 @@
+// 营销活动
+.goods-promotion {
+	background: linear-gradient(106deg, #FFC424 0%, #FF6521 100%);
+	height: 75px;
+	.price-info {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: flex-start;
+		.icon-box {
+			margin-right: 20rpx;
+			.iconfont{
+				font-size: 60rpx;
+				color: #ffffff;
+			}
+		}
+		.price-box{
+			display: flex;
+			align-items: flex-start;
+			flex-direction: column;
+			height: 100%;
+			justify-content: center;
+			.promotion-text{
+				font-size: 36rpx;
+				color: #fff;
+				line-height: 1;
+			}
+			.sale-num{
+				display: flex;
+				align-items: center;
+				margin-top: 18rpx;
+				view{
+					color: #ffffff;
+					line-height: 1;
+				}
+				.pintuan-num {
+					color: var(--pintuan-label-color);
+					line-height: 1;
+					border-radius: 4rpx;
+					margin-right: 10rpx;
+					// font-size: 24rpx;
+					// padding: 8rpx 14rpx 9.5rpx;
+					// background-color: var(--pintuan-label-bg);
+					font-weight: bold;
+				}
+			}
+		}
+		
+		
+	}
+}
+
+.group-wrap {
+	.goods-module-wrap {
+		&.promotion-price-wrap {
+			display: flex;
+			font-size: $font-size-activity-tag;
+			border-radius: 30rpx;
+			padding: 4rpx 10rpx;
+			margin-right: 10rpx;
+			vertical-align: middle;
+			border: 1px solid;
+			margin-top: 10rpx;
+			line-height: 1;
+			border-color: var(--goods-price);
+			width: fit-content;
+			align-items: center;
+			.label {
+				font-size: $font-size-activity-tag;
+				margin-right: 10rpx;
+				vertical-align: middle;
+				color: var(--goods-price);
+			}
+
+			.price-symbol {
+				font-size: $font-size-tag;
+				top: 0;
+				vertical-align: middle;
+			}
+
+			.price {
+				font-size: $font-size-base;
+			}
+		}
+	}
+}
+
+.spelling-block {
+	font-size: $font-size-base;
+	width: 100%;
+	height: 130rpx;
+	background: #fff;
+
+	.item {
+		padding: 20rpx 0;
+		display: flex;
+		align-items: center;
+		.user-logo {
+			display: inline-block;
+			margin: 0 20rpx 0 0;
+			vertical-align: top;
+			image {
+				width: 80rpx;
+				vertical-align: middle;
+				border-radius: 50%;
+				height: 80rpx;
+			}
+		}
+		.user-name {
+			width: 170rpx;
+			display: inline-block;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			vertical-align: top;
+			font-size: $font-size-base;
+		}
+		.info {
+			font-size: $font-size-tag;
+			margin-right: 20rpx;
+			display: inline-block;
+			text-align: right;
+			flex: 1;
+			.tip {
+				text-align: right;
+			}
+		}
+	}
+}
+
+// 参与拼团
+.pintuan-popup-layer {
+	.layer {
+		padding: 30rpx;
+		width: 422rpx;
+	}
+	.title {
+		text-align: center;
+		padding: 20rpx;
+		font-size: $font-size-toolbar;
+		font-weight: bold;
+	}
+	.info {
+		font-size: $font-size-tag;
+		text-align: center;
+	}
+	.mask-layer-spelling-close {
+		position: absolute;
+		right: -20rpx;
+		top: -20rpx;
+		width: 60rpx;
+		height: 60rpx;
+	}
+	.user-list {
+		padding: 40rpx 0;
+		text-align: center;
+		.item {
+			position: relative;
+			margin-right: 20rpx;
+			display: inline-block;
+			.boss {
+				position: absolute;
+				left: -24rpx;
+				top: 0rpx;
+				color: #fff;
+				border-radius: 20rpx;
+				font-size: $font-size-tag;
+				padding: 4rpx 10rpx;
+				z-index: 1;
+				line-height: 1;
+			}
+			image {
+				width: 80rpx;
+				height: 80rpx;
+				vertical-align: middle;
+				border-radius: 50%;
+			}
+		}
+		.imgX {
+			width: 100%;
+			white-space: nowrap;
+			box-sizing: border-box;
+		}
+	}
+	button {
+		color: #fff;
+		border: 0;
+		margin: 16rpx auto;
+		display: block;
+		width: 90%;
+	}
+}
+.goods-promotion .price-info{
+}
+.countdown {
+		width: 220rpx;
+			background: linear-gradient(106deg, #FFC424 0%, #FF6521 100%);
+		.txt{
+			color: #ffffff!important;
+			font-size: 28rpx!important;
+		}
+		.clockrun{
+			margin-top: 16rpx!important;
+		}
+		&:after{
+			position: absolute;
+			content: '';
+			top: calc(50% - 15rpx);
+			z-index: 5;
+			left: -15rpx;
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 15rpx 15rpx 15rpx 0;
+			border-color: transparent var(--promotion-aux-color) transparent transparent;
+		}
+	}
+	
+	
+.ns-goods-action{
+}
+.mask {
+	width: 100%;
+	height: calc(100% - 200rpx);
+	background-color: rgba(255, 255, 255, 0);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 20;
+}
+.pintuan-pop {
+	position: fixed;
+	background: rgba(255, 255, 255, 0.9);
+	bottom:140rpx;
+	bottom: calc(140rpx + env(safe-area-inset-bottom));
+	bottom: calc(140rpx + constant(safe-area-inset-bottom));
+	right: 20rpx;
+	width: 560rpx;
+	height: 270rpx;
+	padding: 20rpx;
+	box-shadow: 2rpx 2rpx 20rpx rgba(0, 0, 0, 0.1);
+	border-radius: 10rpx;
+	z-index: 100;
+	transition: 0.5s;
+.pintuan-pop-head {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 20rpx;
+	.pintuan-headimg {
+		display: flex;
+		align-items: center;
+		margin-right: 20rpx;
+		image {
+			width: 50rpx;
+			height: 50rpx;
+			border-radius: 50%;
+		}
+	}
+	.pintuan-txt {
+		font-size: 30rpx;
+		text {
+			color: $base-color;
+			margin-right: 0.02rem;
+		}
+	}
+}
+.pintuan-pop-time {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 20rpx;
+	text {
+		color: $base-color;
+	}
+}
+.pintuan-pop-member {
+	display: flex;
+	justify-content: center;
+	margin-top: 30rpx;
+	&.more{
+		padding-left: 30rpx;
+	}
+	.member-item {
+		align-items: center;
+		display: flex;
+		position: relative;
+		width: 80rpx;
+		height: 80rpx;
+		box-sizing: border-box;
+		border: 2rpx solid $base-help-color;
+		border-radius: 50%;
+		margin: 0 15rpx;
+		overflow: hidden;
+		> image {
+			width: 80rpx;
+			height: 80rpx;
+		}
+		view {
+			position: absolute;
+			bottom: 0;
+			background-color: $base-help-color;
+			color: #fff;
+			border-radius: 20rpx;
+			width: 70rpx;
+			text-align: center;
+			left: 3rpx;
+			height: 24rpx;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			box-sizing: border-box;
+			.pintuan-text {
+				width: 34rpx;
+			}
+		}
+		&.icon {
+			border: 0;
+			width: 80rpx;
+			height: 80rpx;
+			border-radius: 50%;
+			border: 2rpx dashed #d3d3d3;
+			text-align: center;
+			display: flex;
+			align-items: center;
+			text {
+				margin: 0 auto;
+				font-size: 36rpx;
+				color: #999;
+			}
+		}
+	}
+	.member-item-box{
+		display: flex;
+		margin-right: 30rpx;
+		.member-item{
+			margin-right: 0;
+			margin-left: -30rpx;
+		}
+		.icon{
+			background-color: #fff;
+			border-color: var(--main-color);
+			.iconfont{
+				color: var(--main-color);
+			}
+		}
+	}
+	.pintuan-member-left {
+		margin-left: 20rpx;
+		image {
+			width: 60rpx;
+		}
+	}
+	.pintuan-member-right {
+		display: flex;
+	}
+	&.txt {
+		align-items: center;
+		margin-top: 40rpx;
+		padding-left: 80px;
+	}
+}
+}
+.fiexd-icon {
+	position: fixed;
+	right: 40rpx;
+	top: 15%;
+	z-index: 100;
+	
+	image {
+		width: 110rpx;
+		max-height: 160rpx;
+	}
+	view {
+		position: absolute;
+		z-index: 10;
+		width: 110rpx;
+		bottom: 28rpx;
+		text-align: center;
+		font-weight: bold;
+		font-size: 28rpx;
+		color: #fff;
+		display: flex;
+		flex-direction: column;
+		line-height: 1.6;
+		text {
+			font-weight: 500;
+			font-size: 24rpx;
+		}
+	}
+}

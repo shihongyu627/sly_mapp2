@@ -1,0 +1,544 @@
+// 优惠券弹出层
+.goods-coupon-popup-layer {
+	height: 800rpx;
+	.coupon-body {
+		position: absolute;
+		left: 0;
+		right: 0;
+		height: 65%;
+
+		.coupon-item {
+			margin: $margin-updown $margin-both;
+			border-radius: 4rpx;
+			background: #fff;
+			padding: 0;
+			position: relative;
+			background-color: #fff2f0;
+			
+			&:before,
+			&:after {
+				position: absolute;
+				content: '';
+				background-color: #fff;
+				top: 50%;
+				width: 30rpx;
+				height: 30rpx;
+				border-radius: 50%;
+				z-index: 5;
+			}
+			&:before {
+				left: 0;
+				transform: translate(-50%, -50%);
+			}
+			&:after {
+				right: 0;
+				transform: translate(50%, -50%);
+			}
+
+			.coupon-info {
+				height: 190rpx;
+				display: flex;
+				width: 100%;
+				position: relative;
+				
+				.info-wrap {
+					width: 220rpx;
+					height: 190rpx;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					margin-right: 20rpx;
+					background-repeat: no-repeat;
+					background-size: 100% 100%;
+					background: linear-gradient(to left, var(--bg-color), var(--bg-color-shallow));
+					position: relative;
+					&.disabled{
+						background: #dedede;
+					}
+					.coupon-line {
+					    position: absolute;
+					    right: 0;
+					    top: 0;
+					    height: 100%;
+					}
+					.coupon-money {
+						color: #fff;
+						text-align: center;
+						line-height: 1;
+						.unit {
+							font-size: 30rpx;
+						}
+						.money {
+							font-size: 60rpx;
+						}
+					}
+					.at-least {
+						font-size: $font-size-tag;
+						color: #fff;
+						text-align: center;
+						margin-top: 20rpx;
+					}
+				}
+
+				.desc-wrap {
+					flex: 1;
+					max-width: calc(100% - 400rpx);
+					position: relative;
+
+					view {
+						white-space: nowrap;
+						overflow: hidden;
+						text-overflow: ellipsis;
+					}
+
+					.coupon-name {
+						margin-top: 10rpx;
+						margin-bottom: 4rpx;
+						font-size: $font-size-base;
+					}
+					.limit {
+						font-size: $font-size-activity-tag;
+					}
+					.time {
+						width: 100%;
+						border-top: 2rpx dashed $color-disabled;
+						position: absolute;
+						bottom: 30rpx;
+						color: $color-tip;
+						padding-top: 10rpx;
+						line-height: 1.5;
+						font-size: $font-size-activity-tag;
+					}
+				}
+
+				button {
+					font-size: $font-size-tag;
+					position: absolute;
+					top: 50%;
+					right: 20rpx;
+					transform: translate(0, -50%);
+					margin: 0;
+					height: 50rpx;
+					line-height: 50rpx;
+					width: 100rpx;
+					padding: 0;
+					&[disabled] {
+						background-color: #dedede !important;
+					}
+				}
+			}
+
+			&.disabled {
+				background-color: #f2f2f2;
+				.coupon-money {
+					color: $color-tip !important;
+				}
+				.at-least {
+					color: $color-tip !important;
+				}
+			}
+		}
+	}
+}
+
+// 满减
+.manjian-popup-layer {
+	height: 660rpx;
+	.free-tip {
+		min-width: 72rpx;
+		height: 36rpx;
+		line-height: 36rpx;
+		text-align: center;
+		border: 0px solid;
+		padding: 8rpx 8rpx;
+		border-radius: $border-radius;
+		margin-right: 20rpx;
+		font-size: $font-size-activity-tag;
+		display: inline-block;
+		font-weight: bold;
+		color: var(--main-color);
+		background-color: var(--main-color-shallow);
+	}
+	.manjian-body {
+		position: absolute;
+		left: 0;
+		right: 0;
+		height: 60%;
+		.item {
+			padding: $padding 0;
+			margin: 0 30rpx;
+			border-bottom: 1px solid $color-line;
+			.value {
+				margin-left: 20rpx;
+			}
+			&:last-child {
+				border-bottom: 0;
+			}
+		}
+	}
+}
+
+// 组合套餐
+.combo-goods-wrap {
+	display: flex;
+	// width: calc(100% - 40rpx);
+	white-space: nowrap;
+	align-items: center;
+	padding: 20rpx 0;
+
+	.goods-wrap {
+		display: flex;
+		align-items: center;
+
+		.goods-item {
+			width: 25%;
+			display: inline-block;
+			margin-right: 30rpx;
+			position: relative;
+			vertical-align: middle;
+			.combo-img {
+				height: 160rpx;
+				width: 160rpx;
+				overflow: hidden;
+				border-radius: $border-radius;
+				position: relative;
+
+				image {
+					width: 100%;
+					height: 100%;
+				}
+				.price-wrap {
+					position: absolute;
+					bottom: 0;
+					background: rgba(0, 0, 0, 0.4);
+					color: #fff;
+					left: 0;
+					width: 100%;
+					font-weight: bold;
+					.unit {
+						font-size: $font-size-tag;
+						margin-left: 10rpx;
+					}
+					.price {
+						font-size: $font-size-base;
+					}
+				}
+			}
+
+			.name {
+				display: block;
+				height: 40rpx;
+				line-height: 40rpx;
+				font-size: $font-size-tag;
+				margin-top: 10rpx;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+			}
+		}
+	}
+}
+
+// 组合套餐
+.bundling-popup-layer {
+	height: 600rpx;
+	.bundling-body {
+		position: absolute;
+		left: 0;
+		right: 0;
+		height: 83%;
+		background-color: $color-bg;
+
+		.bundling-view {
+			margin: 20rpx 30rpx;
+			border-radius: $border-radius;
+
+			.bundling-item {
+				padding: $padding 30rpx;
+				background-color: #fff;
+				margin-bottom: 20rpx;
+				.title {
+					margin-bottom: 20rpx;
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					.iconright {
+						position: initial;
+					}
+				}
+				&:last-child {
+					margin-bottom: 0;
+				}
+				scroll-view {
+					width: 100%;
+					white-space: nowrap;
+					box-sizing: border-box;
+					.goods-wrap {
+						display: flex;
+						align-items: center;
+
+						.goods-item {
+							width: 25%;
+							display: inline-block;
+							margin-right: 30rpx;
+							position: relative;
+							vertical-align: middle;
+							.combo-img {
+								height: 160rpx;
+								width: 160rpx;
+								overflow: hidden;
+								border-radius: $border-radius;
+								position: relative;
+
+								image {
+									width: 100%;
+									height: 100%;
+								}
+								.price-wrap {
+									position: absolute;
+									bottom: 0;
+									background: rgba(0, 0, 0, 0.4);
+									color: #fff;
+									left: 0;
+									width: 100%;
+									font-weight: bold;
+									.unit {
+										font-size: $font-size-tag;
+										margin-left: 10rpx;
+									}
+									.price {
+										font-size: $font-size-base;
+									}
+								}
+							}
+
+							.name {
+								display: block;
+								height: 40rpx;
+								line-height: 40rpx;
+								font-size: $font-size-tag;
+								margin-top: 10rpx;
+								overflow: hidden;
+								text-overflow: ellipsis;
+								white-space: nowrap;
+							}
+						}
+					}
+				}
+				.bundling-price-wrap {
+					text-align: right;
+					margin-top: 20rpx;
+					.label {
+						font-size: $font-size-base;
+						vertical-align: middle;
+						margin-right: 20rpx;
+					}
+					.unit {
+						font-size: $font-size-tag;
+						vertical-align: middle;
+						margin-right: 4rpx;
+						font-weight: bold;
+					}
+					.price {
+						font-size: $font-size-toolbar;
+						vertical-align: middle;
+						font-weight: bold;
+						margin-right: 20rpx;
+					}
+					button {
+						vertical-align: middle;
+						background-color: var(--goods-btn-color);
+					}
+				}
+			}
+		}
+	}
+}
+
+.newdetail {
+	.item {
+		&.coupon {
+			.coupon-list {
+				flex: 1;
+				overflow: hidden;
+				line-height: 1;
+				height: 60rpx;
+				// line-height: 40rpx;
+				max-width: 84%;
+				box-sizing: border-box;
+			}
+			.coupon-item {
+				margin-top: 8rpx;
+				margin-bottom: 10rpx;
+				padding: 3rpx 16rpx;
+				margin-right: 20rpx;
+				position: relative;
+				border: 1.5px solid;
+				background-size: cover;
+				border-radius: 6rpx;
+				display: inline-block;
+				// height: 40rpx;
+				// line-height: 34rpx;
+				box-sizing: border-box;
+				// &:nth-child(2) {
+				// 	margin-left: 0;
+				// }
+				border-color: var(--goods-coupon);
+				&::after,
+				&::before {
+					content: '';
+					width: 12rpx;
+					height: 12rpx;
+					position: absolute;
+					top: 50%;
+					border-radius: $border-radius;
+					background: #fff;
+					border: 1px solid var(--goods-coupon)!important;
+				}
+				&::after {
+					left: -10rpx;
+					transform: translateY(-50%) rotate(-45deg);
+					border-top-color: transparent !important;
+					border-left-color: transparent !important;
+				}
+				&::before {
+					right: -10rpx;
+					transform: translateY(-50%) rotate(-45deg);
+					border-bottom-color: transparent !important;
+					border-right-color: transparent !important;
+				}
+				&:first-child {
+					margin-left: 0;
+				}
+				&:last-child {
+					margin-right: 0;
+				}
+				view {
+					overflow: hidden;
+					text-overflow: ellipsis;
+					white-space: nowrap;
+					font-size: 24rpx;
+					text-align: center;
+					line-height: 1.5;
+					// height: 36rpx;
+					// height: 36rpx;
+					// line-height: 34rpx;
+					color:var(--goods-coupon);
+					font-weight: bold;
+				}
+			}
+		}
+	}
+}
+
+.more-img-wrap {
+	width: 38rpx;
+	height: 38rpx;
+	position: absolute;
+	right: 30rpx;
+	image {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+// 会员卡
+.member-card-wrap {
+	margin-top: 20rpx;
+	height: 80rpx;
+	border-radius: 10rpx;
+	background: linear-gradient(to right, var(--goods-card-bg), var(--goods-card-bg-shallow));
+	display: flex;
+	align-items: center;
+	padding: 0 20rpx;
+	color: var(--goods-card-color);
+
+	.iconhuiyuan {
+		margin-right: 10rpx;
+		line-height: 1;
+		font-size: 32rpx;
+	}
+
+	.info {
+		flex: 1;
+		color: #e5ce75;
+		font-size: $font-size-tag;
+	}
+
+	.btn {
+		text-align: center;
+		line-height: 50rpx;
+		height: 50rpx;
+		border-radius: 6rpx;
+		width: 160rpx;
+		font-size: $font-size-tag;
+		color: #222;
+		font-weight: bold;
+		background: var(--goods-card-color);
+	}
+}
+
+.goods-promotion {
+	background: var(--promotion-color);
+	height: 75px;
+	.price-info {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: flex-start;
+		.icon-box {
+			margin-right: 20rpx;
+			.iconfont{
+				font-size: 60rpx;
+				color: #ffffff;
+			}
+		}
+		.price-box{
+			display: flex;
+			align-items: flex-start;
+			flex-direction: column;
+			height: 100%;
+			justify-content: center;
+			.promotion-text{
+				font-size: 36rpx;
+				color: #fff;
+				line-height: 1;
+			}
+			.sale-num{
+				display: flex;
+				align-items: center;
+				margin-top: 18rpx;
+				view{
+					color: #ffffff;
+					line-height: 1;
+				}
+				 
+			}
+		}
+		
+		
+	}
+}
+.countdown {
+		width: 220rpx;
+		background: var(--promotion-aux-color);
+		.txt{
+			color: #ffffff!important;
+			font-size: 28rpx!important;
+		}
+		.clockrun{
+			margin-top: 16rpx!important;
+		}
+		&:after{
+			position: absolute;
+			content: '';
+			top: calc(50% - 15rpx);
+			z-index: 5;
+			left: -15rpx;
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 15rpx 15rpx 15rpx 0;
+			border-color: transparent var(--promotion-aux-color) transparent transparent;
+		}
+	}

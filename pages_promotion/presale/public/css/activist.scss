@@ -1,0 +1,112 @@
+.activist-container{
+	width: 100vw;
+	height: 100vh;
+}
+
+.order-item{
+	margin: $ns-margin;
+	padding: 26rpx 24rpx;
+	border-radius: 10rpx;
+	background: #fff;
+	display: flex;
+	flex-direction: column;
+	
+	.order-header{
+		display: flex;
+		align-items:center;
+		padding-bottom: 26rpx;
+		border-bottom: 1px solid #f1f1f1;
+		
+		.status-num {
+			font-size: $ns-font-size-sm;
+			color: #383838;
+		}
+		
+		.status-name{
+			flex: 1;
+			text-align: right;
+			font-size: $ns-font-size-sm;
+		}
+	}
+	
+	.goods-wrap {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 27rpx 0;
+		box-sizing: border-box;
+		border-bottom: 1px solid #f7f7f7;
+		image {
+			width: 170rpx;
+			height: 170rpx;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.goods-info {
+			flex: 1;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-end;
+			margin-left: 15rpx;
+			.goods-name {
+				width: 480rpx;
+				line-height: 38rpx;
+				font-size: $ns-font-size-sm;
+				color: #000;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				display: -webkit-box;
+				-webkit-line-clamp: 2;
+				-webkit-box-orient: vertical;
+			}
+			.goods-num {
+				display: flex;
+				justify-content: space-between;
+				align-items: flex-start;
+				margin-top: 21rpx;
+				.num-text {
+					font-size: $ns-font-size-sm;
+					line-height: 1;
+				}
+				.num-price {
+					display: flex;
+					flex-direction: column;
+					align-items: flex-end;
+					line-height: 1;
+					font-size: $ns-font-size-sm;
+					.num {
+						color: #838383;
+						margin-top: 16rpx;
+						display: flex;
+						align-items: center;
+					}
+				}
+			}
+		}
+	}
+	.goods-btn {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		margin-top: 27rpx;
+		.btn-text {
+			font-size: $ns-font-size-sm;
+			text {
+				&:nth-child(2) {
+					margin-left: 17rpx;
+					text {
+						font-size: $ns-font-size-lg;
+					}
+				}
+			}
+		}
+		.order-operation {
+			display: flex;
+			margin-top: 24rpx;
+			.order-box-btn {
+				font-size: $ns-font-size-sm;
+			}
+		}
+	}
+}

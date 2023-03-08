@@ -1,0 +1,110 @@
+.activist-container {
+	width: 100vw;
+	height: 100vh;
+}
+
+.order-item {
+	margin: $margin-updown $margin-both;
+	padding: 26rpx 24rpx;
+	border-radius: 10rpx;
+	background: #fff;
+	display: flex;
+	flex-direction: column;
+
+	.order-header {
+		display: flex;
+		align-items: center;
+		padding-bottom: 26rpx;
+		border-bottom: 2rpx solid #f1f1f1;
+
+		.status-num {
+			font-size: $font-size-goods-tag;
+			color: $color-title;
+		}
+
+		.status-name {
+			flex: 1;
+			text-align: right;
+			font-size: $font-size-tag;
+		}
+	}
+
+	.goods-wrap {
+		display: flex;
+		padding: 27rpx 0;
+		box-sizing: border-box;
+		border-bottom: 2rpx solid #f7f7f7;
+		image {
+			width: 170rpx;
+			height: 170rpx;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.goods-info {
+			flex: 1;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			margin-left: 15rpx;
+
+			.goods-name {
+				line-height: 38rpx;
+				font-size: $font-size-base;
+				color: $color-title;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				display: -webkit-box;
+				-webkit-line-clamp: 2;
+				-webkit-box-orient: vertical;
+			}
+			.goods-num {
+				display: flex;
+				justify-content: space-between;
+				align-items: flex-start;
+				margin-top: 21rpx;
+				.num-text {
+					font-size: $font-size-tag;
+					line-height: 1;
+				}
+				.num-price {
+					display: flex;
+					flex-direction: column;
+					align-items: flex-end;
+					line-height: 1;
+					font-size: $font-size-tag;
+					.num {
+						color: $color-tip;
+						margin-top: 16rpx;
+						display: flex;
+						align-items: center;
+					}
+				}
+			}
+		}
+	}
+	.goods-btn {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		margin-top: 27rpx;
+		.btn-text {
+			font-size: $font-size-tag;
+			text {
+				&:nth-child(2) {
+					margin-left: 17rpx;
+					text {
+						font-size: $font-size-base;
+					}
+				}
+			}
+		}
+		.order-action {
+			display: flex;
+			margin-top: 24rpx;
+			.order-box-btn {
+				font-size: $font-size-goods-tag;
+			}
+		}
+	}
+}

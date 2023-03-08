@@ -1,0 +1,246 @@
+.refund-container {
+	width: 100vw;
+	height: 100vh;
+}
+
+.align-right {
+	text-align: right;
+}
+
+.goods-wrap {
+	margin: $margin-updown $margin-both;
+	padding: 30rpx;
+	border-radius: $border-radius;
+	background: #fff;
+	display: flex;
+	position: relative;
+
+	.goods-img {
+		width: 180rpx;
+		height: 180rpx;
+		margin-right: 20rpx;
+		border-radius: $border-radius;
+		overflow: hidden;
+
+		image {
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	.goods-info {
+		flex: 1;
+		position: relative;
+		max-width: calc(100% - 200rpx);
+
+		.goods-name {
+			display: -webkit-box;
+			-webkit-box-orient: vertical;
+			-webkit-line-clamp: 2;
+			overflow: hidden;
+			line-height: 1.5;
+			font-size: $font-size-base;
+		}
+	}
+}
+
+.refund-option {
+	margin: $margin-updown $margin-both;
+	border-radius: $border-radius;
+	background: #fff;
+
+	.option-item {
+		padding: $padding;
+		display: flex;
+		position: relative;
+
+		view {
+			flex: 1;
+
+			text {
+				display: block;
+			}
+		}
+
+		.iconright {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			color: #ddd;
+			right: 20rpx;
+		}
+
+		&:last-of-type {
+			border-top: 2rpx solid #f2f2f2;
+		}
+	}
+}
+
+.refund-form {
+	margin: $margin-updown $margin-both;
+	padding: $padding;
+	border-radius: $border-radius;
+	background: #fff;
+
+	.item-wrap {
+		display: flex;
+		position: relative;
+		line-height: 80rpx;
+
+		.label {
+			width: 142rpx;
+			padding-right: 5rpx;
+			line-height: 80rpx;
+		}
+
+		.cont {
+			flex: 1;
+			line-height: 80rpx;
+			text-align: right;
+			.refund-desc {
+				font-size: $font-size-base;
+				width: 100%;
+				line-height: 1;
+				min-height: 80rpx;
+			}
+			
+			&.reason {
+				padding-right: 40rpx;
+			}
+		}
+		.label.active{
+			width: 100%;
+		}
+
+		.iconright {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			color: #ddd;
+			right: 0;
+		}
+	}
+}
+.textarea-box{
+	position: relative;
+	.mark{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		background: red;
+	}
+}
+.newText{
+	width: 100%;
+	min-height: 200rpx;
+	border-radius: $border-radius;
+	box-sizing: border-box;
+	margin-top: 10rpx;
+}
+
+.sub-btn {
+	position: fixed;
+	width: 100%;
+	height: 100rpx;
+	line-height: 100rpx;
+	text-align: center;
+	color: #fff;
+	bottom: 0;
+	&.safe-area {
+		margin-bottom: 48rpx !important;
+	}
+}
+
+.popup {
+	width: 100vw;
+	background: #fff;
+	border-top-left-radius: 24rpx;
+	border-top-right-radius: 24rpx;
+
+	.popup-header {
+		height: 90rpx;
+		display: flex;
+		align-items: center;
+		padding: 0 30rpx;
+
+		& > view {
+			flex: 1;
+			line-height: 1;
+		}
+
+		.tit {
+			font-size: $font-size-toolbar;
+			font-weight: 600;
+		}
+
+		.vice-tit {
+			margin-right: 20rpx;
+		}
+	}
+
+	.popup-footer {
+		height: 140rpx;
+
+		.confirm-btn {
+			height: 80rpx;
+			line-height: 80rpx;
+			color: #fff;
+			text-align: center;
+			margin: 20rpx;
+			border-radius: $border-radius;
+			&.color-base-bg{
+				color: var(--btn-text-color);
+			}
+		}
+		
+		&.bottom-safe-area {
+			padding-bottom: 48rpx;
+		}
+	}
+}
+
+.refund-reason-popup {
+	height: 50vh;
+	display: flex;
+	flex-direction: column;
+	
+	.iconclose {
+		font-size: 40rpx;
+	}
+	
+	.popup-body {
+		flex: 1;
+		
+		.scroll-view {
+			height: 100%;
+		}
+		
+		.item {
+			display: flex;
+			padding: 0 30rpx;
+			position: relative;
+			height: 70rpx;
+			line-height: 70rpx;
+
+			.reason {
+				flex: 1;
+				height: 70rpx;
+				line-height: 70rpx;
+			}
+
+			& > .iconfont {
+				font-size: 40rpx;
+				position: absolute;
+				top: 50%;
+				right: 30rpx;
+				transform: translateY(-50%);
+			}
+
+			& > .iconyuan_checkbox {
+				color: $color-tip;
+			}
+		}
+	}
+}

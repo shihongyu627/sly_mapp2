@@ -1,0 +1,2202 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationStyle": "custom"
+				// "enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/richText/richText",
+			"style": {
+				// #ifdef H5
+				"navigationStyle": "custom",
+				// #endif
+				"navigationBarTitleText": ""
+			}
+		},
+		//******************商品模块（11）******************
+		{
+			"path": "pages/goods/cart",
+			"style": {
+				// #ifdef H5
+				"navigationStyle": "custom",
+				// #endif
+				"navigationBarTitleText": "购物车"
+			}
+		},
+		// {
+		// 	"path": "pages/goods/category",
+		// 	"style": {
+		// 		"disableScroll": true,
+		// 		"navigationStyle": "custom",
+		// 		"navigationBarTitleText": "商品分类"
+		// 	}
+		// },
+
+		// 商品详情、限时折扣、预售
+		{
+			"path": "pages/goods/detail",
+			"style": {
+				// #ifdef H5
+				"navigationStyle": "custom",
+				// #endif
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/goods/list",
+			"style": {
+				// #ifdef H5
+				"navigationStyle": "custom",
+				// #endif
+				"navigationBarTitleText": "商品列表"
+			}
+		},
+
+		//******************会员模块（20）******************
+		{
+			"path": "pages/member/index",
+			"style": {
+				"enablePullDownRefresh": true,
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "会员中心"
+			}
+		},
+		//******************订单模块（12）******************
+		{
+			"path": "pages/order/payment",
+			"style": {
+
+			}
+		},
+		{
+			"path": "pages/order/list",
+			"style": {
+				// #ifdef H5
+				"navigationStyle": "custom"
+				// #endif
+			}
+		},
+		// {
+		// 	"path": "pages/order/detail",
+		// 	"style": {
+		// 		// #ifdef H5
+		// 		"navigationStyle": "custom",
+		// 		// #endif
+		// 		"enablePullDownRefresh": true
+		// 	}
+		// },
+		// 本地配送订单详情
+		// {
+		// 	"path": "pages/order/detail_local_delivery",
+		// 	"style": {
+		// 		// #ifdef H5
+		// 		"navigationStyle": "custom"
+		// 		// #endif
+		// 	}
+		// },
+		// 自提订单详情
+		// {
+		// 	"path": "pages/order/detail_pickup",
+		// 	"style": {
+		// 		// #ifdef H5
+		// 		"navigationStyle": "custom"
+		// 		// #endif
+		// 	}
+		// },
+		//柚币订单详情
+		// {
+		// 	"path": "pages/order/detail_point",
+		// 	"style": {
+		// 		// #ifdef H5
+		// 		"navigationStyle": "custom"
+		// 		// #endif
+		// 	}
+		// },
+		{
+			"path": "pages/store/list/list",
+			"style": {
+				"enablePullDownRefresh": true,
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "门店"
+			}
+		},
+		{
+			"path": "pages/shop/index",
+			"style": {
+				// "enablePullDownRefresh": true,
+				"navigationBarTitleText": "商城"
+			}
+		}
+	],
+	"subPackages": [{
+			//******************预约订单（3）******************
+			"root": "order",
+			"pages": [
+				//******************我的预约******************
+				{
+					"path": "detail_local_delivery",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "detail_pickup",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "detail",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom",
+						// #endif
+						"enablePullDownRefresh": true
+					}
+				}
+			]
+		}, {
+			//******************服务人员（3）******************
+			"root": "servicePeople",
+			"pages": [
+				//******************人员列表******************
+				{
+					"path": "index",
+					"style": {
+						// "enablePullDownRefresh": true,
+						"navigationBarTitleText": "人员列表"
+					}
+				}
+			]
+		}, {
+			//******************预约订单（3）******************
+			"root": "orderReserve",
+			"pages": [
+				//******************我的预约******************
+				{
+					"path": "list/list",
+					"style": {
+						// "enablePullDownRefresh": true,
+						"navigationBarTitleText": "我的预约"
+					}
+				},
+				{
+					"path": "detail/detail",
+					"style": {
+						"navigationBarTitleText": "预约详情"
+						// "enablePullDownRefresh": true
+					}
+				}
+			]
+		}, {
+			//******************首页菜单（3）******************
+			"root": "tabbarHome",
+			"pages": [
+				//******************品牌介绍（3）******************
+				{
+					"path": "brand/brand",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom",
+						// #endif
+						"navigationBarTitleText": ""
+					}
+				},
+				//******************重大新闻（3）******************
+				{
+					"path": "bigNews/list/list",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom",
+						// #endif
+						"navigationBarTitleText": "重大新闻"
+					}
+				},
+				{
+					"path": "bigNews/info/info",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom",
+						// #endif
+						"navigationBarTitleText": ""
+					}
+				},
+				//******************见证效果（3）******************
+				{
+					"path": "result/result",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom",
+						// #endif
+						"navigationBarTitleText": ""
+					}
+				},
+				//******************近视百科（3）******************
+				{
+					"path": "myopia/list/list",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom",
+						// #endif
+						"navigationBarTitleText": "近视百科"
+					}
+				},
+				{
+					"path": "myopia/info/info",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom",
+						// #endif
+						"navigationBarTitleText": ""
+					}
+				}
+			]
+		}, {
+			//******************商城（3）******************
+			"root": "tabbarShop",
+			"pages": [{
+					"path": "list/list",
+					"style": {
+						"navigationBarTitleText": "爆品"
+					}
+				},
+				{
+					"path": "info/info",
+					"style": {
+						"navigationBarTitleText": "商品详情"
+					}
+				},
+				{
+					"path": "card/list/list",
+					"style": {
+						"navigationBarTitleText": "开卡"
+					}
+				},
+				{
+					"path": "card/info/info",
+					"style": {
+						"navigationBarTitleText": "会员卡详情"
+					}
+				},
+				{
+					"path": "card/payment/payment",
+					"style": {
+						"navigationBarTitleText": "待付款订单"
+					}
+				}
+			]
+		}, {
+			//******************门店（3）******************
+			"root": "tabbarStore",
+			"pages": [{
+					"path": "list/list",
+					"style": {
+						"navigationBarTitleText": "门店列表"
+					}
+				}, {
+					"path": "info/info",
+					"style": {
+						"navigationBarTitleText": ""
+					}
+				},
+				{
+					"path": "map/map",
+					"style": {
+						"navigationBarTitleText": "门店"
+					}
+				},
+				{
+					"path": "success/success",
+					"style": {
+						"navigationBarTitleText": "预约成功"
+					}
+				},
+				{
+					"path": "city/city",
+					"style": {
+						"navigationBarTitleText": "城市列表"
+					}
+				}
+			]
+		}, {
+			//*****************我要开门店（26）******************
+			"root": "openStore",
+			"pages": [{
+				"path": "index",
+				"style": {
+					"navigationBarTitleText": "我要合作"
+				}
+			}, {
+				"path": "userApply",
+				"style": {
+					"navigationBarTitleText": "我要合作"
+				}
+			}, {
+				"path": "joinApply",
+				"style": {
+					"navigationBarTitleText": " "
+				}
+			}, {
+				"path": "history",
+				"style": {
+					"navigationBarTitleText": "发展历程"
+				}
+			}, {
+				"path": "process",
+				"style": {
+					"navigationBarTitleText": "开店流程"
+				}
+			}, {
+				"path": "cost",
+				"style": {
+					"navigationBarTitleText": "开店费用"
+				}
+			}, {
+				"path": "agreement",
+				"style": {
+					"navigationBarTitleText": "申请须知"
+				}
+			}, {
+				"path": "applyStep",
+				"style": {
+					"navigationBarTitleText": "开店申请"
+				}
+			}, {
+				"path": "list",
+				"style": {
+					"navigationBarTitleText": "加盟案例"
+				}
+			}, {
+				"path": "info",
+				"style": {
+					"navigationBarTitleText": ""
+				}
+			}, {
+				"path": "map",
+				"style": {
+					"navigationBarTitleText": "选址"
+				}
+			}]
+		}, {
+			//*****************经销端门店（26）******************
+			"root": "sellStore",
+			"pages": [{
+					"path": "index/index",
+					"style": {
+						"enablePullDownRefresh": true,
+						"navigationBarTitleText": " "
+					}
+				},
+				{
+					"path": "dealerInfo/dealerInfo",
+					"style": {
+						"navigationBarTitleText": "经销商信息"
+					}
+				},
+				{
+					"path": "dealerInfo/editInfo"
+				},
+				{
+					"path": "dealerInfo/modifyQrcode"
+				},
+				{
+					"path": "order/list/list",
+					"style": {
+						"navigationBarTitleText": "门店订单"
+					}
+				},
+				{
+					"path": "order/info/info",
+					"style": {
+						"navigationBarTitleText": "订单详情"
+					}
+				},
+				{
+					"path": "tiyan/list/list",
+					"style": {
+						"navigationBarTitleText": "体验订单"
+					}
+				},
+				{
+					"path": "tiyan/info/info",
+					"style": {
+						"navigationBarTitleText": "订单详情"
+					}
+				},
+				{
+					"path": "record/list/list",
+					"style": {
+						"navigationBarTitleText": "预约记录"
+					}
+				},
+				{
+					"path": "record/info/info",
+					"style": {
+						"navigationBarTitleText": "预约详情"
+					}
+				},
+				{
+					"path": "inOrder/list/list",
+					"style": {
+						"navigationBarTitleText": "进销订单"
+					}
+				},
+				{
+					"path": "inOrder/info/info",
+					"style": {
+						"navigationBarTitleText": "订单详情"
+					}
+				},
+				{
+					"path": "outOrder/list/list",
+					"style": {
+						"navigationBarTitleText": "提货订单"
+					}
+				},
+				{
+					"path": "outOrder/info/info",
+					"style": {
+						"navigationBarTitleText": "订单详情"
+					}
+				},
+				{
+					"path": "stock/list/list",
+					"style": {
+						"navigationBarTitleText": "库存管理"
+					}
+				},
+				{
+					"path": "stock/record/record",
+					"style": {
+						"navigationBarTitleText": "库存流水"
+					}
+				},
+				{
+					"path": "deliveryLocal/delivery",
+					"style": {
+						"navigationBarTitleText": ""
+					}
+				},
+				{
+					"path": "stock/payment/payment",
+					"style": {
+						"navigationBarTitleText": "提交订单"
+					}
+				},
+				{
+					"path": "authorize/list/list",
+					"style": {
+						// "enablePullDownRefresh": true,
+						"navigationBarTitleText": "授权账号"
+					}
+				},
+				{
+					"path": "authorize/create/create",
+					"style": {
+						"navigationBarTitleText": "添加账号"
+					}
+				},
+				{
+					"path": "team/list/list",
+					"style": {
+						// "enablePullDownRefresh": true,
+						"navigationBarTitleText": "员工管理"
+					}
+				},
+
+				{
+					"path": "customer/list/list",
+					"style": {
+						"navigationBarTitleText": "客户管理"
+					}
+				},
+				{
+					"path": "landing/index/index",
+					"style": {
+						"navigationBarTitleText": "落地费管理"
+					}
+				},
+				{
+					"path": "landing/order/order",
+					"style": {
+						"navigationBarTitleText": "落地费管理"
+					}
+				},
+				{
+					"path": "landing/upload/upload",
+					"style": {
+						"navigationBarTitleText": "上传发票"
+					}
+				},
+				{
+					"path": "landing/info/info",
+					"style": {
+						"navigationBarTitleText": "收款信息"
+					}
+				},
+				{
+					"path": "recommend/list/list",
+					"style": {
+						"navigationBarTitleText": "推荐人"
+					}
+				},
+				{
+					"path": "recommend/fee/fee",
+					"style": {
+						"navigationBarTitleText": "推荐费管理"
+					}
+				},
+				{
+					"path": "recommend/order/order",
+					"style": {
+						"navigationBarTitleText": "推荐费管理"
+					}
+				},
+				{
+					"path": "recommend/rule/rule",
+					"style": {
+						"navigationBarTitleText": ""
+					}
+				},
+				{
+					"path": "team/info/info",
+					"style": {
+						"navigationBarTitleText": "员工详情"
+					}
+				},
+				{
+					"path": "team/info/edit",
+					"style": {
+						"navigationBarTitleText": "信息修改"
+					}
+				},
+				{
+					"path": "team/create/create",
+					"style": {
+						"navigationBarTitleText": "添加员工"
+					}
+				},
+				{
+					"path": "team/record/record",
+					"style": {
+						"navigationBarTitleText": "工资明细"
+					}
+				},
+				{
+					"path": "bill/list/list",
+					"style": {
+						"navigationBarTitleText": "收支管理"
+					}
+				},
+				{
+					"path": "bill/create/create",
+					"style": {
+						"navigationBarTitleText": "费用录入"
+					}
+				},
+				{
+					"path": "distributor/list/list",
+					"style": {
+						"navigationBarTitleText": "经销商成员"
+					}
+				},
+				{
+					"path": "distributor/list1/list",
+					"style": {
+						"navigationBarTitleText": "经销商成员"
+					}
+				},
+				{
+					"path": "distributor/list2/list",
+					"style": {
+						"navigationBarTitleText": "经销商成员"
+					}
+				},
+				{
+					"path": "distributor/list3/list",
+					"style": {
+						"navigationBarTitleText": "经销商成员"
+					}
+				},
+				{
+					"path": "distributor/list4/list",
+					"style": {
+						"navigationBarTitleText": "经销商成员"
+					}
+				},
+				{
+					"path": "distributor/record/record",
+					"style": {
+						"navigationBarTitleText": " "
+					}
+				},
+				{
+					"path": "store/list/list",
+					"style": {
+						"navigationBarTitleText": "门店列表"
+					}
+				},
+				{
+					"path": "ranking/city/city",
+					"style": {
+						"navigationBarTitleText": "城市排行榜"
+					}
+				},
+				{
+					"path": "ranking/distributor/distributor",
+					"style": {
+						"navigationBarTitleText": "经销商排行榜"
+					}
+				},
+				{
+					"path": "ranking/store/store",
+					"style": {
+						"navigationBarTitleText": "门店排行榜"
+					}
+				},
+				{
+					"path": "reportForm/finance/finance",
+					"style": {
+						"navigationBarTitleText": "财务报表"
+					}
+				},
+				{
+					"path": "reportForm/statistics/statistics",
+					"style": {
+						"navigationBarTitleText": "数据报表"
+					}
+				}
+			]
+		}, {
+
+			//******************营销活动模块（26）******************
+			"root": "pages_promotion",
+			"pages": [
+				// //----------盲盒模块（2）----------
+				// {
+				// 	"path": "blindbox/list",
+				// 	"style": {
+				// 		// #ifdef H5
+				// 		"navigationStyle": "custom",
+				// 		// #endif
+				// 		"navigationBarTitleText": "盲盒"
+				// 	}
+				// },
+				// {
+				// 	"path": "blindbox/goods_list",
+				// 	"style": {
+				// 		// #ifdef H5
+				// 		"navigationStyle": "custom",
+				// 		// #endif
+				// 		"navigationBarTitleText": "全部商品"
+				// 	}
+				// },
+				// {
+				// 	"path": "blindbox/fill_address",
+				// 	"style": {
+				// 		// #ifdef H5
+				// 		"navigationStyle": "custom",
+				// 		// #endif
+				// 		"navigationBarTitleText": "填写收货信息"
+				// 	}
+				// },
+				// {
+				// 	"path": "blindbox/index",
+				// 	"style": {
+				// 		// #ifdef H5
+				// 		"navigationStyle": "custom",
+				// 		// #endif
+				// 		"navigationBarTitleText": "拆盲盒"
+				// 	}
+				// },
+				// {
+				// 	"path": "blindbox/my_box",
+				// 	"style": {
+				// 		// #ifdef H5
+				// 		"navigationStyle": "custom",
+				// 		// #endif
+				// 		"navigationBarTitleText": "我的盲盒活动"
+				// 	}
+				// },
+				// {
+				// 	"path": "blindbox/my_prize",
+				// 	"style": {
+				// 		// #ifdef H5
+				// 		"navigationStyle": "custom",
+				// 		// #endif
+				// 		"navigationBarTitleText": "我的奖品"
+				// 	}
+				// },
+				//----------好友瓜分劵模块（2）----------
+				// {
+				// 	"path": "divideticket/list",
+				// 	"style": {
+				// 		// #ifdef H5
+				// 		"navigationStyle": "custom",
+				// 		// #endif
+				// 		"navigationBarTitleText": "好友瓜分劵列表"
+				// 	}
+				// },
+				// {
+				// 	"path": "divideticket/index",
+				// 	"style": {
+				// 		// #ifdef H5
+				// 		"navigationStyle": "custom",
+				// 		// #endif
+				// 		"navigationBarTitleText": "好友瓜分券"
+				// 	}
+				// },
+				// {
+				// 	"path": "divideticket/poster",
+				// 	"style": {
+				// 		// #ifdef H5
+				// 		"navigationStyle": "custom",
+				// 		// #endif
+				// 		"navigationBarTitleText": "瓜分海报"
+				// 	}
+				// },
+				// {
+				// 	"path": "divideticket/my_guafen",
+				// 	"style": {
+				// 		// #ifdef H5
+				// 		"navigationStyle": "custom",
+				// 		// #endif
+				// 		"navigationBarTitleText": "我的瓜分列表"
+				// 	}
+				// },
+				//----------组合套餐模块（2）----------
+				{
+					"path": "bundling/detail",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "bundling/payment",
+					"style": {
+
+					}
+				},
+
+				//----------专题活动模块（4）----------
+				// {
+				// 	"path": "topics/list",
+				// 	"style": {
+				// 		// #ifdef H5
+				// 		"navigationStyle": "custom"
+				// 		// #endif
+				// 	}
+				// },
+				// {
+				// 	"path": "topics/detail",
+				// 	"style": {
+				// 		// #ifdef H5
+				// 		"navigationStyle": "custom"
+				// 		// #endif
+				// 	}
+				// },
+				// {
+				// 	"path": "topics/goods_detail",
+				// 	"style": {
+				// 		// #ifdef H5
+				// 		"navigationStyle": "custom"
+				// 		// #endif
+				// 	}
+				// },
+				// {
+				// 	"path": "topics/payment",
+				// 	"style": {
+				// 		"navigationStyle": "custom"
+				// 	}
+				// },
+
+				//----------秒杀模块（3）----------
+				{
+					"path": "seckill/list",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "seckill/detail",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "seckill/payment",
+					"style": {
+
+					}
+				},
+
+				//----------拼团模块（5）----------
+				{
+					"path": "pintuan/list",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "pintuan/detail",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "pintuan/my_spell",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "pintuan/share",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "pintuan/payment",
+					"style": {
+
+					}
+				},
+				{
+					"path": "pintuan/order",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				//----------砍价模块（5）----------
+				{
+					"path": "bargain/list",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "bargain/detail",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+
+				{
+					"path": "bargain/my_bargain",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "bargain/payment",
+					"style": {
+
+					}
+				},
+
+				//----------团购模块（3）----------
+				{
+					"path": "groupbuy/list",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "groupbuy/detail",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "groupbuy/payment",
+					"style": {
+
+					}
+				},
+				//----------拼团返利----------
+				{
+					"path": "pinfan/list",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom",
+						// #endif
+						"navigationBarTitleText": "拼团返利专区"
+					}
+				},
+				{
+					"path": "pinfan/detail",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "pinfan/payment",
+					"style": {
+						"navigationBarTitleText": "代付款订单"
+					}
+				},
+				{
+					"path": "pinfan/my_rebate",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom",
+						// #endif
+						"navigationBarTitleText": "我的拼团返利"
+					}
+				},
+				{
+					"path": "pinfan/share",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "pinfan/order",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				//----------柚币模块（2）----------
+				{
+					"path": "point/list",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				}, {
+					"path": "point/goods_list",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "point/detail",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "point/payment",
+					"style": {
+
+					}
+				},
+				{
+					"path": "point/order_list",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "point/result",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				//----------预售模块----------
+				{
+					"path": "presale/list",
+					"style": {
+						//#ifdef H5
+						"navigationStyle": "custom"
+						//#endif
+					}
+				},
+				{
+					"path": "presale/detail",
+					"style": {
+						//#ifdef H5
+						"navigationStyle": "custom"
+						//#endif
+					}
+				},
+				{
+					"path": "presale/payment",
+					"style": {
+
+					}
+				},
+				{
+					"path": "presale/order_list",
+					"style": {
+						//#ifdef H5
+						"navigationStyle": "custom"
+						//#endif
+					}
+				},
+				{
+					"path": "presale/order_detail",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom",
+						// #endif
+						"navigationBarTitleText": "订单详情"
+					}
+				},
+				//--------- 打包一口价 ----------
+				// {
+				// 	"path": "bale/detail",
+				// 	"style": {
+				// 		//#ifdef H5
+				// 		"navigationStyle": "custom",
+				// 		//#endif
+				// 		"navigationBarTitleText": "打包一口价"
+				// 	}
+				// },
+				// {
+				// 	"path": "bale/payment",
+				// 	"style": {
+				// 		"navigationStyle": "custom"
+				// 	}
+				// },
+				// {
+				// 	"path": "jielong/jielong",
+				// 	"style": {
+				// 		//#ifdef H5
+				// 		"navigationStyle": "custom",
+				// 		//#endif
+				// 		"navigationBarTitleText": "社群接龙"
+				// 	}
+				// },
+				{
+					"path": "giftcard/index",
+					"style": {
+						//#ifdef H5
+						"navigationStyle": "custom",
+						//#endif
+						"navigationBarTitleText": "礼品卡"
+					}
+				}, {
+					"path": "giftcard/member",
+					"style": {
+						//#ifdef H5
+						"navigationStyle": "custom",
+
+						//#endif
+						"navigationBarTitleText": "我的"
+					}
+				}, {
+					"path": "giftcard/detail",
+					"style": {
+						//#ifdef H5
+						"navigationStyle": "custom",
+						//#endif
+						"navigationBarTitleText": ""
+					}
+				}, {
+					"path": "giftcard/order_list",
+					"style": {
+						//#ifdef H5
+						"navigationStyle": "custom",
+						//#endif
+						"navigationBarTitleText": "订单列表"
+					}
+				}, {
+					"path": "giftcard/order_detail",
+					"style": {
+						//#ifdef H5
+						"navigationStyle": "custom",
+						//#endif
+						"navigationBarTitleText": "订单详情"
+					}
+				}, {
+					"path": "giftcard/list",
+					"style": {
+						//#ifdef H5
+						"navigationStyle": "custom",
+						//#endif
+						"navigationBarTitleText": "卡包"
+					}
+
+				}, {
+					"path": "giftcard/card_info",
+					"style": {
+						//#ifdef H5
+						"navigationStyle": "custom",
+						//#endif
+						"navigationBarTitleText": "礼品卡详情"
+					}
+				}, {
+					"path": "giftcard/give",
+					"style": {
+						//#ifdef H5
+						"navigationStyle": "custom",
+						//#endif
+						"navigationBarTitleText": "礼品卡赠送"
+					}
+				}, {
+					"path": "giftcard/give_info",
+					"style": {
+						//#ifdef H5
+						"navigationStyle": "custom",
+						//#endif
+						"navigationBarTitleText": "领取礼品卡"
+					}
+				}, {
+					"path": "giftcard/member_give_info",
+					"style": {
+						//#ifdef H5
+						"navigationStyle": "custom",
+						//#endif
+						"navigationBarTitleText": "礼品卡详情"
+					}
+				}, {
+					"path": "giftcard/exchange",
+					"style": {
+						//#ifdef H5
+						"navigationStyle": "custom",
+						//#endif
+						"navigationBarTitleText": "卡密激活"
+					}
+				}, {
+					"path": "giftcard/payment",
+					"style": {
+						"navigationBarTitleText": "待付款订单"
+					}
+				}, {
+					"path": "giftcard/receive_list",
+					"style": {
+						//#ifdef H5
+						"navigationStyle": "custom",
+						//#endif
+						"navigationBarTitleText": "收到的卡片"
+					}
+				}, {
+					"path": "giftcard/give_list",
+					"style": {
+						//#ifdef H5
+						"navigationStyle": "custom",
+						//#endif
+						"navigationBarTitleText": "赠送的卡片"
+					}
+				}, {
+					"path": "giftcard/card_use",
+					"style": {
+						//#ifdef H5
+						"navigationStyle": "custom",
+						//#endif
+						"navigationBarTitleText": "礼品卡使用"
+					}
+				}, {
+					"path": "giftcard/not_exist",
+					"style": {
+						//#ifdef H5
+						"navigationStyle": "custom",
+						//#endif
+						"navigationBarTitleText": "礼品卡不存在"
+					}
+				}, {
+					"path": "giftcard/use_select",
+					"style": {
+						//#ifdef H5
+						"navigationStyle": "custom",
+						//#endif
+						"navigationBarTitleText": "商品选择"
+					}
+				},
+				// {
+				// 	"path": "game/cards",
+				// 	"style": {
+				// 		// #ifdef H5
+				// 		"navigationStyle": "custom"
+				// 		// #endif
+				// 	}
+				// },
+				// {
+				// 	"path": "game/turntable",
+				// 	"style": {
+				// 		// #ifdef H5
+				// 		"navigationStyle": "custom"
+				// 		// #endif
+				// 	}
+				// },
+				// {
+				// 	"path": "game/smash_eggs",
+				// 	"style": {
+				// 		// #ifdef H5
+				// 		"navigationStyle": "custom"
+				// 		// #endif
+				// 	}
+				// },
+				// {
+				// 	"path": "game/record",
+				// 	"style": {
+				// 		// #ifdef H5
+				// 		"navigationStyle": "custom"
+				// 		// #endif
+				// 	}
+				// },
+				//****************** 分销 ******************
+				{
+					"path": "fenxiao/index",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "fenxiao/apply",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "fenxiao/order",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "fenxiao/relation",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "fenxiao/order_detail",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "fenxiao/team",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom",
+						// #endif
+						"navigationBarTitleText": "邀请记录"
+					}
+				},
+				{
+					"path": "fenxiao/withdraw_apply",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "fenxiao/withdraw_list",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "fenxiao/promote_code",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "fenxiao/rule",
+					"style": {
+						//#ifdef H5
+						"navigationStyle": "custom",
+						//#endif
+						"navigationBarTitleText": "活动规则"
+					}
+				},
+				{
+					"path": "fenxiao/level",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "fenxiao/goods_list",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "fenxiao/bill",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				}
+			]
+		},
+		{
+			//*****************其他模块（26）******************
+			"root": "applyDealer",
+			"pages": [{
+				"path": "index",
+				"style": {
+					// #ifdef H5
+					"navigationStyle": "custom",
+					// #endif
+					"navigationBarTitleText": "邀请合作"
+				}
+			}, {
+				"path": "apply",
+				"style": {
+					// #ifdef H5
+					"navigationStyle": "custom",
+					// #endif
+					"navigationBarTitleText": "邀请合作"
+				}
+			}]
+		}, {
+			//*****************其他模块（26）******************
+			"root": "pages_tool",
+			"pages": [{
+					"path": "richText/richText",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom",
+						// #endif
+						"navigationBarTitleText": ""
+					}
+				}, {
+					"path": "invite/list/list",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom",
+						// #endif
+						"navigationBarTitleText": "收益明细"
+					}
+				}, {
+					"path": "invite/people/people",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom",
+						// #endif
+						"navigationBarTitleText": "邀请人数"
+					}
+				}, {
+					"path": "invite/rule/rule",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom",
+						// #endif
+						"navigationBarTitleText": "活动说明"
+					}
+				}, {
+					"path": "memberVip/list/list",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom",
+						// #endif
+						"navigationBarTitleText": "会员"
+					}
+				}, {
+					"path": "memberVip/info/info",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom",
+						// #endif
+						"navigationBarTitleText": "会员"
+					}
+				}, {
+					"path": "store/store",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom",
+						// #endif
+						"navigationBarTitleText": "门店列表"
+					}
+				}, {
+					"path": "webview/webview",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				//----------我的设备（2）----------
+				{
+					"path": "device/device",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom",
+						// #endif
+						"navigationBarTitleText": "我的设备"
+					}
+				},
+				//----------好友瓜分红包模块（2）----------
+				{
+					"path": "hongbao/index",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom",
+						// #endif
+						"navigationBarTitleText": "裂变红包"
+					}
+				},
+				{
+					"path": "hongbao/list",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom",
+						// #endif
+						"navigationBarTitleText": "红包裂变"
+					}
+				},
+				{
+					"path": "hongbao/my_hongbao",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "hongbao/poster",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom",
+						// #endif
+						"navigationBarTitleText": "瓜分红包海报"
+					}
+				},
+
+				{
+					"path": "index/storelist",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom",
+						// #endif
+						"navigationBarTitleText": "门店列表"
+					}
+				},
+				//******************会员模块（20）******************
+				{
+					"path": "member/modify_face",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "member/account",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "member/account_edit",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "member/apply_withdrawal",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "member/balance",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "member/balance_detail",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "member/collection",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "member/coupon",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom",
+						// #endif
+						"disableScroll": true
+					}
+				},
+				{
+					"path": "member/footprint",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "member/level",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "member/card",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "member/card_buy",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "member/card/list/list",
+					"style": {
+						"navigationBarTitleText": "体验卡"
+					}
+				},
+				{
+					"path": "member/card/info/info",
+					"style": {
+						"navigationBarTitleText": "我的体验卡"
+					}
+				},
+				{
+					"path": "member/card/get/get",
+					"style": {
+						"navigationBarTitleText": "领取体验卡"
+					}
+				},
+				{
+					"path": "member/card/order/list/list",
+					"style": {
+						"navigationBarTitleText": "开卡订单"
+					}
+				},
+				{
+					"path": "member/card/order/info/info",
+					"style": {
+						"navigationBarTitleText": "订单详情"
+					}
+				},
+				{
+					"path": "member/card_agreement",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "member/level_growth_rules",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "member/point",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "member/point_detail",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				// {
+				// 	"path": "member/signin",
+				// 	"style": {
+				// 		// #ifdef H5
+				// 		"navigationStyle": "custom"
+				// 		// #endif
+				// 		// "navigationBarTitleText": "签到有礼"
+				// 	}
+				// },
+				{
+					"path": "member/withdrawal",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "member/withdrawal_detail",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "member/address",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "member/address_edit",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "member/pay_password",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "member/cancellation",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "member/assets",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "member/cancelstatus",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "member/cancelsuccess",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "member/cancelrefuse",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "member/info",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom",
+						// #endif
+						"navigationBarTitleText": "个人资料"
+					}
+				},
+				{
+					"path": "member/info_edit",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				//******************登录模块******************
+				{
+					"path": "login/find",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom",
+						// #endif
+						"navigationBarTitleText": ""
+					}
+				},
+				//******************商品模块******************
+				{
+					"path": "goods/coupon",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "goods/coupon_receive",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "goods/evaluate",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "goods/search",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "goods/brand",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "goods/not_exist",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+
+
+				//******************CMS模块（6）******************
+				{
+					"path": "help/list",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "help/detail",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "notice/list",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "notice/detail",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "article/list",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "article/detail",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "effect/list",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom",
+						// #endif
+						"navigationBarTitleText": "闪亮明星"
+					}
+				},
+				{
+					"path": "effect/detail",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				//******************核销模块（4）******************
+				{
+					"path": "verification/index",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "verification/list",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "verification/detail",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+
+				//******************会员充值（4）******************
+				{
+					"path": "recharge/list",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "recharge/order_list",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+
+				{
+					"path": "live/list",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+
+				//****************** 店铺笔记 ******************
+				{
+					"path": "store_notes/note_list",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom",
+						// #endif
+						"disableScroll": true
+					}
+				},
+				{
+					"path": "store_notes/note_detail",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				//******************聊天（4）******************
+				{
+					"path": "chat/room",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom",
+						// #endif
+						"softinputMode": "adjustResize"
+					}
+				},
+				//******************邀请******************
+				{
+					"path": "member/invite_friends",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				//******************支付模块（2）******************
+				{
+					"path": "pay/index",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "pay/wx_pay",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "pay/result",
+					"style": {
+						"navigationBarTitleText": "订单结果"
+					}
+				},
+				{
+					"path": "pay/storeResult",
+					"style": {
+						"navigationBarTitleText": "订单结果"
+					}
+				},
+				{
+					"path": "storeclose/storeclose",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				//******************订单模块（2）******************
+				{
+					"path": "order/logistics",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "order/evaluate",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "order/refund",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "order/refund_goods_select",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "order/refund_type_select",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "order/refund_batch",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "order/refund_detail",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				{
+					"path": "order/activist",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom",
+						// #endif
+						"navigationBarTitleText": "退款"
+					}
+				},
+				// 虚拟订单详情
+				{
+					"path": "order/detail_virtual",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom"
+						// #endif
+					}
+				},
+				//******************登录模块（3）******************
+				{
+					"path": "login/login",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom",
+						// #endif
+						"navigationBarTitleText": "登录"
+					}
+				},
+				{
+					"path": "login/register",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom",
+						// #endif
+						"navigationBarTitleText": "注册"
+					}
+				},
+				{
+					"path": "form/form",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom",
+						// #endif
+						"navigationBarTitleText": ""
+					}
+				}
+			]
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "",
+		"navigationBarBackgroundColor": "#ffffff",
+		"backgroundColor": "#F7f7f7",
+		"backgroundColorTop": "#f7f7f7",
+		"backgroundColorBottom": "#f7f7f7"
+	},
+	"tabBar": {
+		// #ifdef H5
+		"custom": true,
+		// #endif
+		"color": "#333",
+		"selectedColor": "#FF0036",
+		"backgroundColor": "#fff",
+		"borderStyle": "white",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/store/list/list",
+				"text": "门店"
+			},
+			{
+				"pagePath": "pages/shop/index",
+				"text": "商城"
+			},
+			{
+				"pagePath": "pages/goods/cart",
+				"text": "购物车"
+			},
+			{
+				"pagePath": "pages/member/index",
+				"text": "个人中心"
+			}
+		]
+	},
+	"easycom": {
+		"diy-*(\\W.*)": "@/components/diy-components/diy$1.vue"
+	},
+	"preloadRule": {
+		"pages/index/index": {
+			"network": "all",
+			"packages": ["pages_tool"]
+		}
+	}
+}

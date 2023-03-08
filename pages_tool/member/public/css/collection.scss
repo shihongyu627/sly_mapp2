@@ -1,0 +1,101 @@
+.lineheight-clear {
+	line-height: 1;
+}
+.goods_list {
+	width: 100%;
+	padding: $padding 0;
+	padding-top: 0;
+	box-sizing: border-box;
+
+	.goods_li {
+		height: 200rpx;
+		background: #ffffff;
+		overflow: hidden;
+		border-radius: $border-radius;
+		display: flex;
+		justify-content: space-between;
+		margin: $margin-updown $margin-both;
+		padding: 30rpx;
+
+		.pic {
+			width: 200rpx;
+			height: 200rpx;
+			box-sizing: border-box;
+			border-radius: $border-radius;
+			overflow: hidden;
+			image {
+				width: 100%;
+				height: 100%;
+			}
+		}
+
+		.goods_info {
+			flex: 1;
+			height: 100%;
+			padding-left: 20rpx;
+			box-sizing: border-box;
+			display: flex;
+			justify-content: space-between;
+			flex-direction: column;
+		}
+
+		.goods_name {
+			width: 100%;
+			height: 80rpx;
+			line-height: 1.5;
+			display: -webkit-box;
+			-webkit-box-orient: vertical;
+			-webkit-line-clamp: 2;
+			overflow: hidden;
+		}
+
+		.goods_opection {
+			width: 100%;
+			height: 80rpx;
+			display: flex;
+			justify-content: space-between;
+			align-items: flex-end;
+			
+			.right {
+				display: flex;
+				align-items: flex-end;
+			}
+
+			.symbol {
+				font-size: $font-size-tag;
+				color: var(--price-color);
+			}
+
+			.price {
+				font-size: $font-size-toolbar;
+				color: var(--price-color);
+			}
+
+			.cars {
+				padding: 0rpx 15rpx;
+				border: 1rpx solid $color-line;
+				border-radius: 32rpx;
+			}
+
+			icon {
+				font-size: $font-size-tag;
+			}
+
+			.alike {
+				padding: 0rpx 15rpx;
+				border: 1rpx solid $color-line;
+				border-radius: 24rpx;
+				margin-left: 20rpx;
+			}
+		}
+	}
+}
+.empty {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: $padding;
+	box-sizing: border-box;
+	margin-top: 50rpx;
+}

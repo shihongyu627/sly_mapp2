@@ -1,0 +1,32 @@
+/**
+ * 你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ * 建议使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ */
+
+//主色调，红色：#FF0036，绿色 #4CAF50，蓝色：#03A9F4，黄色：#FF9800，粉色：#FF547B，棕色：#C3A769，浅绿色：#65C4AA，黑色：#333333，紫色：#B323B4，淡粉色：#FF8B8B
+
+// 颜色
+$color-title: #303133; // 主标题
+$color-sub: #606266; // 副标题
+$color-tip: #909399; // 辅助提示色
+$color-bg: #f8f8f8; // 背景色
+$color-line: #eeeeee; //分割线
+$color-disabled: #cccccc; // 禁用色
+
+// 文字
+$font-size-base: 28rpx; // 14px，正文文字
+$font-size-toolbar: 32rpx; // 16px，用于导航栏、标题
+$font-size-sub: 26rpx; // 13px，副标题
+$font-size-tag: 24rpx; // 12px，辅助性文字/大标签
+$font-size-goods-tag: 22rpx; // 11px，商品列表角标
+$font-size-activity-tag: 20rpx; // 10px，活动角标（拼团等角标）/小标签文字
+
+$margin-both: 30rpx; //外边距 左右
+$margin-updown: 20rpx; // 外边距 上下
+$border-radius: 10rpx; //圆角
+$padding: 20rpx; //内边距
+
+$base-color: var(--base-color); // 主色调
+$base-help-color: var(--base-help-color); //辅助颜色
+
+$goods-price-color: var(--goods-price-color)
